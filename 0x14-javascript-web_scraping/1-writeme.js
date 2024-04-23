@@ -8,7 +8,7 @@ if (process.argv.length !== 4) {
 }
 
 const filename = process.argv[2];
-const text = process.argv[3] + '\n';
+const text = process.argv[3];
 
 fs.writeFile(filename, text, 'UTF-8', (err) => {
   if (err) {
